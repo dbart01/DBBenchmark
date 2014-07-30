@@ -13,4 +13,10 @@ Benchmarking with blocks can be is very easy:
   }
 }];
 
+// You can even add a name to display when logging
+[DBBenchmark benchmarkName:@"Testing Loop" withBlock:^{
+  for (int i = 0; i < 1000000; ++i) {
+    // Perform lots of work
+  }
+}];
 ```
