@@ -11,6 +11,7 @@
 		9A2065C218180F61003F18C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A2065C018180F61003F18C4 /* InfoPlist.strings */; };
 		9A2065CB18180F6C003F18C4 /* DBBenchmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2065C918180F6C003F18C4 /* DBBenchmark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A2065CC18180F6C003F18C4 /* DBBenchmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2065CA18180F6C003F18C4 /* DBBenchmark.m */; };
+		9AA4285019887C64009BF682 /* DBBenchmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA4284F19887C64009BF682 /* DBBenchmark.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9A2065C318180F61003F18C4 /* DBBenchmark-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBBenchmark-Prefix.pch"; sourceTree = "<group>"; };
 		9A2065C918180F6C003F18C4 /* DBBenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBenchmark.h; sourceTree = "<group>"; };
 		9A2065CA18180F6C003F18C4 /* DBBenchmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBenchmark.m; sourceTree = "<group>"; };
+		9AA4284F19887C64009BF682 /* DBBenchmark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBBenchmark.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA4285019887C64009BF682 /* DBBenchmark.framework in Frameworks */,
 				9A2065BC18180F61003F18C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +41,7 @@
 		9A2065AB18180F61003F18C4 = {
 			isa = PBXGroup;
 			children = (
+				9AA4284F19887C64009BF682 /* DBBenchmark.framework */,
 				9A2065BD18180F61003F18C4 /* DBBenchmark */,
 				9A2065BA18180F61003F18C4 /* Frameworks */,
 				9A2065B918180F61003F18C4 /* Products */,
@@ -293,6 +297,10 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -314,6 +322,10 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
