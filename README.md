@@ -11,6 +11,7 @@ Benchmarking with blocks can be is very easy:
     // Perform lots of work
   }
 }];
+// Benchmark: 0.0043 seconds
 
 // You can even add a name to display when logging
 [DBBenchmark benchmarkName:@"Testing Loop" withBlock:^{
@@ -18,6 +19,7 @@ Benchmarking with blocks can be is very easy:
     // Perform lots of work
   }
 }];
+// Testing Loop: 0.0043 seconds
 ```
 
 ### Regular Benchmarks
@@ -28,4 +30,5 @@ for (int i = 0; i < 1000000; ++i) {
   // Perform lots of work
 }
 [DBBenchmark end:@"Testing Loop"];
+// Testing Loop: 0.0043 seconds
 ```
