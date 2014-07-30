@@ -59,3 +59,4 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
     DBBenchmarkEnd(@"Testing a Loop %d times", 1000000);
 });
 ```
+However, be careful not to start concurrent benchmarks because they will likely result in wonky data due to some benchmarks ending the wrong benchmarks.
