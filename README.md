@@ -44,3 +44,18 @@ DBBenchmarkEnd(@"Testing a Loop %d times", 1000000);
 // Testing a Loop 1000000 times: 0.0043 seconds
 ```
 The beauty of <code>DBBenchmarkEnd()</code> is that it takes a variable number of arguments so you can pass them in just like <code>NSLog()</code>.
+
+### Nesting Benchmarks
+Any of the benchmarking methods above can be nested and are thread-safe. So this is perfectly accesseptable:
+```objc
+DBBenchmarkStart();
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+    for (int i = 0; i < 1000000; ++i) {
+        
+        DBBenchmarkStart();
+        // Perform a unit of work
+        DBBenchmarkEnd(@"Inner Benchmark");
+    }
+    DBBenchmarkEnd(@"Testing a Loop %d times", 1000000);
+});
+```
