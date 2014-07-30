@@ -1,7 +1,7 @@
 DBBenchmark
 ===========
 
-An Objective-C/C framework designed for extremely simple and easy benchmarking during development. Easily integrate into your project using the static library DBBenchmark.framework and include in your source:
+An Objective-C/C framework designed for extremely simple and easy benchmarking during development. Easily integrate into your project using the static library DBBenchmark.framework and import in your source:
 ```objc
 #import <DBBenchmark/DBBenchmark.h>
 ```
