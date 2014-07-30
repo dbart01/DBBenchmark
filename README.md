@@ -43,3 +43,4 @@ for (int i = 0; i < 1000000; ++i) {
 DBBenchmarkEnd(@"Testing a Loop %d times", 1000000);
 // Testing a Loop 1000000 times: 0.0043 seconds
 ```
+The beauty of <code>DBBenchmarkEnd()</code> is that it takes a variable number of arguments so you can pass them in just like <code>NSLog()</code>.
